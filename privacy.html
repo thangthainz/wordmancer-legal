@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Wordmancer</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-dim: #a88a2c;
+      --parchment: #f1e5c0;
+      --parchment-dark: #c9b890;
+      --ink: #1a1410;
+      --ink-soft: #0a0807;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--ink-soft);
+      color: var(--parchment);
+      font-family: 'Georgia', 'Cambria', serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .crumb {
+      color: var(--parchment-dark);
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+    }
+    .crumb a {
+      color: var(--gold-dim);
+      text-decoration: none;
+    }
+    .crumb a:hover { color: var(--gold); }
+    h1 {
+      color: var(--gold);
+      font-size: 2rem;
+      font-style: italic;
+      letter-spacing: 0.05em;
+      margin: 0 0 0.5rem;
+    }
+    .updated {
+      color: var(--parchment-dark);
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.03em;
+    }
+    h2 {
+      color: var(--gold);
+      font-size: 1.25rem;
+      letter-spacing: 0.03em;
+      margin: 2.5rem 0 0.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+    }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    p { margin: 0.75rem 0; }
+    ul { padding-left: 1.5rem; }
+    li { margin: 0.4rem 0; }
+    a { color: var(--gold); }
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      color: var(--parchment-dark);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    code {
+      background: rgba(212, 175, 55, 0.1);
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="crumb"><a href="index.html">&larr; Wordmancer</a></div>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 28 May 2026</p>
+
+    <p>Wordmancer is a single-developer iOS game built by Kenzy Thai. We take privacy
+       seriously — single-player gameplay never requires an account, network access, or
+       data collection. The information below covers the optional online features
+       (Sign in with Apple, Daily Verse leaderboard, crash reporting).</p>
+
+    <h2>1. What data we collect</h2>
+    <p>When you launch Wordmancer for the first time without signing in:</p>
+    <ul>
+      <li><strong>Nothing</strong> leaves your device. Your runs, achievements, and settings
+          are persisted to local on-device storage (MMKV) only.</li>
+    </ul>
+    <p>When you tap "Sign In for Leaderboard" and authenticate with Apple:</p>
+    <ul>
+      <li><strong>Authentication identifier</strong> — an opaque Apple user ID provided by
+          Sign in with Apple. We never see your real email unless you choose to share it
+          via Apple's relay system.</li>
+      <li><strong>Daily Verse scores</strong> — the best single-day score you achieve on a
+          given daily seed, stored against your account so we can rank the leaderboard.</li>
+      <li><strong>Profile name (optional)</strong> — a chosen display name shown next to your
+          score on the leaderboard. You can leave this blank.</li>
+      <li><strong>Lifetime stats (optional)</strong> — total runs, longest word, achievement
+          unlocks. Used for in-app stat displays and cross-device sync.</li>
+    </ul>
+    <p>When the app crashes or hits an unexpected error:</p>
+    <ul>
+      <li><strong>Crash diagnostics</strong> — stack traces, breadcrumbs (which screens you
+          visited, which actions you took), device model, OS version. No personally
+          identifying data. No location, no contacts, no photos.</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>No advertising identifiers (IDFA).</li>
+      <li>No location data, contacts, photos, microphone, or camera access.</li>
+      <li>No third-party analytics SDKs (Facebook, Google Analytics, etc.).</li>
+      <li>No tracking across other apps or websites.</li>
+    </ul>
+
+    <h2>3. Third-party services</h2>
+    <p>To deliver online features Wordmancer uses three vendor services:</p>
+    <ul>
+      <li><strong>Apple Sign In with Apple</strong> — authentication. Subject to
+          <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+      <li><strong>Supabase</strong> — managed PostgreSQL database hosting your account,
+          profile, and Daily Verse scores. Data lives in the EU (Frankfurt region) under
+          row-level security policies that prevent any user from reading or modifying
+          another user's rows. Subject to
+          <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
+      <li><strong>Sentry</strong> — crash and error monitoring. Stack traces and
+          breadcrumbs only, scrubbed of any user-supplied text. Subject to
+          <a href="https://sentry.io/privacy/">Sentry's Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>4. Children's privacy</h2>
+    <p>Wordmancer is rated 4+ on the App Store. We do not knowingly collect any
+       personally identifiable information from children. If you believe a child has
+       provided us with such information, contact us at the address below and we will
+       delete it promptly.</p>
+
+    <h2>5. Your rights and account deletion</h2>
+    <p>You can delete your Wordmancer account and all associated server-side data at any
+       time directly inside the app:</p>
+    <ul>
+      <li>Open <code>Settings</code> from the main menu.</li>
+      <li>Tap <code>Delete Account</code> at the bottom.</li>
+      <li>Confirm. Your account row, profile, and Daily Verse score history are
+          permanently removed from the Supabase database within a few seconds. This
+          action is irreversible.</li>
+    </ul>
+    <p>If you signed up without using the app (you cannot — there is no web sign-up) or
+       if the in-app flow fails for any reason, you can also request deletion by emailing
+       <a href="mailto:kenzythai@yahoo.com">kenzythai@yahoo.com</a> with your Apple
+       relay-email or chosen profile name. We will action the request within 7 days.</p>
+
+    <h2>6. Data retention</h2>
+    <p>Account data is retained until you delete your account. Crash diagnostics are
+       retained for 90 days then automatically purged.</p>
+
+    <h2>7. Data security</h2>
+    <p>All network traffic uses TLS 1.2+. The Supabase service role key never ships
+       inside the app — it lives only on our edge functions. Your Apple Keychain stores
+       the session token; local game data sits in MMKV inside the app sandbox.</p>
+
+    <h2>8. International data transfers</h2>
+    <p>Servers are hosted in the EU (Frankfurt). If you play from outside the EU your
+       data is transferred there under Supabase's standard contractual clauses.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If we materially change what data is collected or how it is used we will update
+       this page and bump the "Last updated" date above. Continued use of the app after
+       the change date constitutes acceptance.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions, deletion requests, or anything else:
+       <a href="mailto:kenzythai@yahoo.com">kenzythai@yahoo.com</a></p>
+
+    <div class="footer">
+      &copy; 2026 Kenzy Thai &middot; <a href="index.html">Back to Wordmancer</a>
+    </div>
+  </div>
+</body>
+</html>

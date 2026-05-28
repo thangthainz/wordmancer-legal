@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wordmancer</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-dim: #a88a2c;
+      --parchment: #f1e5c0;
+      --parchment-dark: #c9b890;
+      --ink: #1a1410;
+      --ink-soft: #0a0807;
+      --crimson: #8b2c2c;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--ink-soft);
+      color: var(--parchment);
+      font-family: 'Georgia', 'Cambria', serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    h1 {
+      color: var(--gold);
+      font-size: 2.5rem;
+      font-style: italic;
+      letter-spacing: 0.08em;
+      margin: 0 0 0.5rem;
+      text-align: center;
+    }
+    .tagline {
+      color: var(--parchment-dark);
+      font-style: italic;
+      text-align: center;
+      letter-spacing: 0.05em;
+      margin-bottom: 3rem;
+    }
+    .divider {
+      width: 80px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.5;
+      margin: 2rem auto;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .link-card {
+      display: block;
+      padding: 1.5rem;
+      border: 1px solid var(--gold-dim);
+      border-radius: 4px;
+      color: var(--parchment);
+      text-decoration: none;
+      background: rgba(212, 175, 55, 0.05);
+      transition: background 0.15s ease;
+    }
+    .link-card:hover {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--gold);
+    }
+    .link-card-title {
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .link-card-desc {
+      color: var(--parchment-dark);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+    .footer {
+      text-align: center;
+      color: var(--parchment-dark);
+      font-size: 0.85rem;
+      margin-top: 4rem;
+      opacity: 0.7;
+    }
+    .footer a { color: var(--gold-dim); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Wordmancer</h1>
+    <p class="tagline">"In the beginning was the Word. Then came the Silence."</p>
+
+    <div class="divider"></div>
+
+    <p>Wordmancer is a premium dark-academia word roguelite for iOS. Build spells out
+       of grimoire pages, charm tiles, and rare modifiers across six antes of escalating
+       boss fights. A daily verse leaderboard, an endless echo arc, and 35+ achievements
+       weave through the run loop.</p>
+
+    <div class="links">
+      <a class="link-card" href="privacy.html">
+        <div class="link-card-title">Privacy Policy</div>
+        <div class="link-card-desc">What data Wordmancer collects, how it is stored, and your rights.</div>
+      </a>
+      <a class="link-card" href="support.html">
+        <div class="link-card-title">Support &amp; Contact</div>
+        <div class="link-card-desc">Common issues, how to delete your account, and how to reach the developer.</div>
+      </a>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Kenzy Thai &middot; <a href="mailto:kenzythai@yahoo.com">kenzythai@yahoo.com</a>
+    </div>
+  </div>
+</body>
+</html>
